@@ -5,9 +5,9 @@ numsg=list()
 encmsg=list()
 publickey=list()
 
-msgfile=input('Podaj nazwe pliku, ktory chcesz zakodowac: ')
-publickeyfile=input('Podaj nazwe klucza, ktorego chcesz uzyc do zaszyfrowania pliku [.pub]: ')
-outfile=str(input('Podaj nazwe pliku wynikowego: '))
+msgfile=input('Enter filename you want to encode: ')
+publickeyfile=input('Enter key name you want to use to encode the file [.pub]: ')
+outfile=str(input('Enter output filename: '))
 
 with open(publickeyfile,'r') as datafile:
 	for line in datafile:

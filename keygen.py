@@ -49,8 +49,8 @@ def GenPrime(key_length):
 	return p
 	
 
-key_length=int(input('Podaj dlugosc klucza RSA [w bitach]:'))
-private_key_file=input('Podaj nazwę dla nowej pary kluczy: ')
+key_length=int(input('Enter RSA key length [bits]:'))
+private_key_file=input('Enter name for a new key pair: ')
 public_key_file=str((private_key_file+'.pub'))
 q=GenPrime(key_length)
 r=GenPrime(key_length)

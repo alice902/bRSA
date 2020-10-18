@@ -6,9 +6,9 @@ privatekey=list()
 numsg=list()
 plain=list()
 
-msgfile=input('Podaj nazwe pliku, ktory chcesz odkodowac: ')
-privatekeyfile=input('Podaj nazwe klucza, ktorego chcesz uzyc do odszyfrowania pliku: ')
-outfile=str(input('Podaj nazwe pliku wynikowego: '))
+msgfile=input('Enter filename you want to decode: ')
+privatekeyfile=input('Enter key you want to use to decode the file: ')
+outfile=str(input('Enter output filename: '))
 
 with open(privatekeyfile,'r') as datafile:
 	for line in datafile:
